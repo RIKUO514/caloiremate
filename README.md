@@ -48,7 +48,7 @@ caloire mate
 |--------------------|---------------------|-------------------------|
 | text               | string              | null: false             |
 | calorie            | string              | null: false             |
-| user_id            | references          | foreign_key: true       |
+| user               | references          | foreign_key: true       |
 
 ### Association
 
@@ -62,7 +62,7 @@ caloire mate
 |--------------------|---------------------|-------------------------|
 | weekly             | string              | null: false             |
 | one_month          | string              | null: false             |
-| user_id            | references          | foreign_key: true       |
+| user               | references          | foreign_key: true       |
 
 - has_one  :user
 
@@ -71,8 +71,8 @@ caloire mate
 | Column             | Type                | Options                 |
 |--------------------|---------------------|-------------------------|
 | comment_text       | string              | null: false             |
-| user_id            | references          | foreign_key: true       |
-| post_id            | references          | foreign_key: true       |
+| user               | references          | foreign_key: true       |
+| post               | references          | foreign_key: true       |
 
 ### Association
 
