@@ -46,8 +46,10 @@ caloire mate
 
 | Column             | Type                | Options                 |
 |--------------------|---------------------|-------------------------|
+| name               | string              | null: false             |
 | text               | string              | null: false             |
 | calorie            | string              | null: false             |
+| image              | text                | null: false             |
 | user               | references          | foreign_key: true       |
 
 ### Association

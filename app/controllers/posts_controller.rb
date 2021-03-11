@@ -5,17 +5,17 @@ class PostsController < ApplicationController
   end
 
   def new
-    @posts = Post.new
+    @post = Post.new
   end
   
   def create
-    posts.create(posts_params)
+    Post.create(posts_params)
   end
 
 private
 
 def posts_params
-  posts.require(:tweet).permit(:name, :colorie, :user)
+  params.require(:post).permit(:name, :text, :user, :image)
 end
 
 end
